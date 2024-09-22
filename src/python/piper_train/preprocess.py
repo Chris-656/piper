@@ -440,23 +440,23 @@ def ljspeech_dataset(args: argparse.Namespace) -> Iterable[Utterance]:
 
             # Try file name relative to metadata
             wav_path = metadata_path.parent / filename
-            _LOGGER.debug("Trying to set wav_path to:%s",wav_path)
+            _LOGGER.warning("Trying to set wav_path to:%s",wav_path)
 
             if not wav_path.exists():
                 # Try with .wav
                 wav_path = metadata_path.parent / f"{filename}.wav"
-                _LOGGER.debug("Trying to set wav_path to:%s",wav_path)
+                _LOGGER.warning("Trying to set wav_path to:%s",wav_path)
 
             if not wav_path.exists():
 
                  # Try wav/ or wavs/
                 wav_path = wav_dir / filename
-                _LOGGER.debug("Trying to set wav_path to:%s",wav_path)
+                _LOGGER.warning("Trying to set wav_path to:%s",wav_path)
 
             if not wav_path.exists():
                 # Try with .wav
                 wav_path = wav_dir / f"{filename}.wav"
-                _LOGGER.debug("Trying to set wav_path to:%s",wav_path)
+                _LOGGER.warning("Trying to set wav_path to:%s",wav_path)
 
 
             if not skip_audio:
