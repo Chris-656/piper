@@ -15,8 +15,8 @@ _LOGGER.addHandler(c_handler)
 OPSET_VERSION = 15
 
 
-def main():
-    """Main entry point"""
+def main() -> None:
+    #"""Main entry point"""
     print("test")
     print("test1")
     _LOGGER.debug("Test")
