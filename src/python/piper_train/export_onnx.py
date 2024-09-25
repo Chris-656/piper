@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+print("Start")
 import argparse
 import logging
 from pathlib import Path
