@@ -16,6 +16,7 @@ OPSET_VERSION = 15
 
 def main() -> None:
     """Main entry point"""
+    _LOGGER.info("Test")
     torch.manual_seed(1234)
 
     parser = argparse.ArgumentParser()
