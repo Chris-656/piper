@@ -37,6 +37,8 @@ def main() -> None:
     else:
         logging.basicConfig(level=logging.INFO)
 
+    logging.basicConfig(level=logging.DEBUG)
+    logging.getLogger().setLevel(logging.DEBUG)
     _LOGGER.debug(args)
 
     # -------------------------------------------------------------------------
