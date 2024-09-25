@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-print("Start")
+
 import argparse
 import logging
 from pathlib import Path
 from typing import Optional
-
+print("Start")
 import torch
 
 from .vits.lightning import VitsModel
