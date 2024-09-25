@@ -6,8 +6,10 @@ from pathlib import Path
 from typing import Optional
 print("Start")
 import torch
+print("Start1")
 
 from .vits.lightning import VitsModel
+print("Start2")
 
 _LOGGER = logging.getLogger("piper_train.export_onnx")
 c_handler = logging.StreamHandler()
