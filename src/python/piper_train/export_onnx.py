@@ -11,11 +11,13 @@ from .vits.lightning import VitsModel
 _LOGGER = logging.getLogger("piper_train.export_onnx")
 c_handler = logging.StreamHandler()
 _LOGGER.addHandler(c_handler)
+
 OPSET_VERSION = 15
 
 
 def main() -> None:
     """Main entry point"""
+    print("test")
     _LOGGER.warning("Test")
     torch.manual_seed(1234)
 
