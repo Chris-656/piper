@@ -25,6 +25,7 @@ def main() -> None:
         "--debug", action="store_true", help="Print DEBUG messages to the console"
     )
     args = parser.parse_args()
+    _LOGGER.info(args)
 
     if args.debug:
         logging.basicConfig(level=logging.DEBUG)
